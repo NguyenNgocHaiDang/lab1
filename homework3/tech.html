@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thông tin – Traineeship HTTT 2026</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    .hero-tech {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-tech .half {
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+}
+
+.hero-tech .half:first-child {
+  background-image: url("images/t1.jpg");
+}
+
+.hero-tech .half:last-child {
+  background-image: url("images/t2.jpg");
+}
+
+.hero-tech::after {
+  content: "Thông tin chi tiết Traineeship 2026";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-tech .half:hover {
+  transform: scale(1.05);
+}
+
+
+    .content-section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .content-section h2 {
+      color: #004080;
+      margin-bottom: 1rem;
+    }
+    .content-section p {
+      line-height: 1.6;
+      margin-bottom: 1.2rem;
+      color: #333;
+    }
+    .list-benefits {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+    }
+    .past-activities {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .activity-card {
+      background: #eefaff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+
+
+
+  </style>
+</head>
+
+<body>
+  <!-- Navbar (reuse your navbar structure) -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="index.html" id="navbar__logo"><i class="fas fa-anchor"></i>TRAINEESHIP</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span> <span class="bar"></span> <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item"><a href="index.html" class="navbar__links">Trang chủ</a></li>
+        <li class="navbar__item"><a href="tech.html" class="navbar__links active">Thông tin</a></li>
+        <li class="navbar__item"><a href="#rounds" class="navbar__links">Vòng thi</a></li>
+        <li class="navbar__item">
+          <a href="https://www.facebook.com/DoanHoiHTTT" target="_blank" class="navbar__links">
+            <i class="fab fa-facebook"></i> Facebook
+          </a>
+        </li>
+        <li class="navbar__btn">
+          <a href="https://forms.gle/xTGTVu6NL3N76SZf8" target="_blank" class="button">Đăng ký</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero / Banner for tech page -->
+ <section class="hero-tech">
+  <div class="half"></div>
+  <div class="half"></div>
+</section>
+
+
+  <!-- Content sections -->
+  <section class="content-section">
+    <h2>Giới thiệu Đoàn – Hội Khoa HTTT</h2>
+    <p>
+      Đoàn – Hội Khoa Hệ thống Thông tin là tổ chức sinh viên của khoa, chịu trách nhiệm tổ chức
+      các hoạt động phong trào, văn hóa – thể thao, tình nguyện, hỗ trợ sinh viên trong học tập và nghề nghiệp.
+      Trang tin “Đoàn – Hội HTTT” thường xuyên cập nhật các sự kiện nổi bật như hiến máu tình nguyện, giải
+      thể thao khoa, gặp mặt tân sinh viên… :contentReference[oaicite:4]{index=4}
+    </p>
+
+    <h2>Vì sao nên tham gia Traineeship?</h2>
+    <p>Chương trình Traineeship (Thực tập sinh nội bộ) không chỉ là cơ hội làm việc, mà còn là cầu nối để bạn:</p>
+    <ul class="list-benefits">
+      <li>Rèn luyện kỹ năng thực tế, áp dụng kiến thức vào dự án cụ thể. :contentReference[oaicite:5]{index=5}</li>
+      <li>Được mentor & hướng dẫn kỹ năng tổ chức sự kiện, truyền thông, lãnh đạo.</li>
+      <li>Mở rộng mạng lưới quan hệ trong khoa, trong các hoạt động đoàn hội.</li>
+      <li>Tạo điểm nhấn trên CV khi bạn ứng tuyển sau này.</li>
+    </ul>
+
+    <h2>Hoạt động nổi bật gần đây</h2>
+    <div class="past-activities">
+      <div class="activity-card">
+        <h3>Hiến máu tình nguyện lần XXI</h3>
+        <p>Chương trình hiến máu do Đoàn – Hội HTTT tổ chức, thu hút đông đảo sinh viên tham gia. </p>
+      </div>
+      <div class="activity-card">
+        <h3>Gặp mặt tân sinh viên khóa 2023</h3>
+        <p>Sự kiện giao lưu, kết nối giữa sinh viên cũ và mới, giúp các bạn mới hòa nhập nhanh hơn. </p>
+      </div>
+      <div class="activity-card">
+        <h3>Giải thể thao UIT SPORT 2024</        </h3>
+        <p>Đội tuyển nam nữ khoa HTTT đã đạt thành tích nổi bật tại giải đấu UIT-Sport.</p>
+      </div>
+    </div>
+
+    <h2>Quy trình & tiêu chí tuyển chọn</h2>
+    <p>Chương trình Traineeship 2026 gồm 3 vòng: “Căng buồm ra khơi” (đăng ký), “Vượt qua thử thách” (phỏng vấn),
+    “Chạm tới kho báu” (thực chiến đội). Yêu cầu ứng viên:</p>
+    <ul class="list-benefits">
+      <li>Đang là sinh viên trường CNTT – ĐHQG.</li>
+      <li>Có tinh thần trách nhiệm, giao tiếp tốt, sáng tạo, hợp tác nhóm.</li>
+      <li>Sẵn sàng học hỏi, tham gia hoạt động Đoàn – Hội.</li>
+    </ul>
+
+    <h2>Liên hệ</h2>
+    <p>Fanpage: <a href="https://www.facebook.com/DoanHoiHTTT" target="_blank">Đoàn – Hội HTTT</a></p>
+    <p>Email: <a href="mailto:httt.doanhoi@gmail.com">httt.doanhoi@gmail.com</a></p>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
